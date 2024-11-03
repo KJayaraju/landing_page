@@ -1,0 +1,110 @@
+.banner {
+  height: auto; /* Change to auto for better responsiveness */
+  min-height: 110vh; /* Ensure it still takes at least 110vh */
+  background: linear-gradient(to bottom, #ffffff, #08FFD9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #44515c;
+  padding: 20px; /* Add padding for mobile devices */
+}
+
+.car1, .car2 {
+  height: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px; /* Add padding for better button appearance */
+  cursor: pointer; /* Add cursor for better user experience */
+}
+
+.car1 {
+  background-color: #ffffff;
+  border: solid #eee6e6;
+}
+
+.car2 {
+  color: aliceblue;
+  background-color: #055841;
+  margin-left: 60px;
+}
+
+/* Container for button alignment */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center; /* Center align buttons */
+}
+
+.card-container {
+  position: relative;
+  width: 70%; /* Make width responsive */
+ /* Limit maximum width */
+  height: 350px; /* Keep fixed height for cards */
+  margin: 20px auto; /* Center container */
+}
+
+.c1, .c2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  color: white;
+  transform: rotate(-7deg);
+}
+
+.c1 {
+  background-color: #6c6e6c;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Higher z-index brings this card on top */
+}
+
+.c1:hover {
+  z-index: 2; 
+  transform: rotate(0deg);/* Bring card on top when hovered */
+}
+
+/* Second card with background and slight offset */
+.c2 {
+  background-color: #5a5857;
+  top: 20px; /* Offset for overlap effect */
+  left: 40px; /* Offset for overlap effect */
+  z-index: 1; /* Lower z-index places this card behind */
+}
+
+.c2:hover {
+  transform: rotate(0deg);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .banner {
+      padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .car1, .car2 {
+      width: 100%; /* Full width on smaller devices */
+      height: 50px; /* Increase button height */
+      margin: 5px 0; /* Adjust margins for better spacing */
+  }
+
+  .card-container {
+      width: 80%; /* Increase width on smaller devices */
+      height: 150px; /* Adjust card height */
+  }
+
+  .c1, .c2 {
+      font-size: 1em; /* Decrease font size */
+  }
+}
+
+@media (min-width: 769px) {
+  .car1, .car2 {
+      width: 180px; /* Keep original width on larger screens */
+  }
+}

@@ -1,0 +1,56 @@
+.cr{
+    margin: 30px;
+}
+.scroll-card {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #fff, rgba(245, 244, 244, 0)), 
+            linear-gradient(to right, #08FFD9, #fff);
+
+  }
+  
+  /* Header styling */
+  .card-header {
+    background-color: #25b48c;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  /* Scrollable content */
+  .card-content {
+    max-height: 400px; /* Set max-height to enable scrolling */
+    overflow-y: auto;
+    padding: 15px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Optional: Scrollbar styling for Webkit browsers */
+  .card-content::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .card-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .card-content::-webkit-scrollbar-thumb {
+    background: #25b48c;
+    border-radius: 5px;
+  }
+  
+  .card-content::-webkit-scrollbar-thumb:hover {
+    background: #1a8361;
+  }
+  .b{
+    border-radius: 20px;
+    background-color: #08FFD9;
+    border: none;
+  }
+  

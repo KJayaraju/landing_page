@@ -1,0 +1,110 @@
+
+
+  .footertop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#08FFD9 -0%, #fff 90%, #08FFD9 10%);
+    height: 100%;
+  }
+  .input{
+    border: none;
+    border-radius: 20px;
+  }
+  .input:hover{
+    border: none;
+  }
+  .mar{
+    margin-bottom: 30px;
+  }
+  .spa{
+    margin-left: 20px;
+    height: 50%;
+    width: 275px;
+    background-color: aliceblue;
+    border-radius: 20px;
+  }
+  .but{
+    border-radius: 20px;
+    background-color: #08FFD9;
+    border: none;
+  }
+  .footer {
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: #fff; 
+    color: rgb(0, 0, 0);
+    text-align: center; 
+    padding: 10px 0; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); 
+}
+.follow{
+  background-color:#044E43;
+  color: #fff;
+}
+/* Main container styling */
+.water-background {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  height: 20vh; /* Set a height for the background */
+  background: #044E43; /* Deep background color */
+  position: relative;
+}
+
+/* Container for watermark text */
+.water-text-container {
+  position: relative; /* Keep relative for stacking context */
+  margin-top: 20px; /* Space between the top h1 and watermark */
+  white-space: nowrap; /* Prevent text wrapping */
+  text-align: center; /* Center text */
+}
+
+/* Water-styled text */
+.water-text {
+  font-size: 12vw; /* Responsive font size */
+  font-weight: bold;
+  color: transparent;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #55967d, #fff, #55967d); /* Water gradient effect */
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text; /* For other browsers */
+  animation: wave 6s infinite ease-in-out;
+  opacity: 0.1; /* Make it more watermark-like */
+}
+
+/* Wave animation */
+@keyframes wave {
+  0%, 100% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+}
+
+.follow {
+  background-color: #044E43; /* Match with the watermark background */
+  color: #fff;
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center text */
+}
+
+.container {
+  max-width: 1200px; /* Limit width for better layout */
+  margin: auto; /* Center the container */
+}
+
+.row {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-around; /* Space between columns */
+}
+
+.col-sm-4, .col-lg-4 {
+  flex: 1; /* Flex-grow for equal width */
+  margin: 10px; /* Space around columns */
+}
+

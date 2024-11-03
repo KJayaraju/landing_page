@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Banner from './compontes/banner';
+import CustomNavbar from './compontes/nav'; 
+import Card from './compontes/card'
+import Below from './compontes/below'
+import Footer from './compontes/footer';
+import Text from './compontes/Revealtext';
+const App=()=>{
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CustomNavbar/>
+      <Banner/>
+      <Card/>
+      <Text/>
+      <Below/>
+      <Footer/>
     </div>
   );
 }
