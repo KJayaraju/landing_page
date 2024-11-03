@@ -1,0 +1,99 @@
+/* Body styling for background color and font family */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar brand/logo */
+.logo {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 150px;
+}
+
+/* Main navigation links */
+.hom, .hom1 {
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: center;
+  transition: border 0.3s ease;
+  color: #555;
+}
+
+.hom:hover, .hom1:hover {
+  border: solid #25b48c;
+
+}
+
+.hom1 {
+  margin-left: 50px;
+}
+
+/* Navbar container (card style) */
+.card {
+  margin: 0 auto;
+  width: 0%; /* Reduce card width */
+   /* Set a max-width to control it on larger screens */
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Right section: Join Community */
+.card2 {
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: solid #eee6e6;
+  transition: border 0.3s ease;
+  color: #555;
+}
+
+.card2:hover {
+  border: solid #25b48c;
+  color: #000;
+}
+
+/* Right section: Get Early Access */
+.card3 {
+  margin-left: 15px;
+  height: 50px;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #055841;
+  transition: border 0.3s ease;
+}
+
+.card3:hover {
+  border: solid #25b48c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  /* Center items on medium screens */
+  .card {
+    width: 80%; /* Increase width slightly on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack items vertically on smaller screens */
+  .hom, .hom1, .card2, .card3 {
+    width: 100%; /* Full-width for better spacing */
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  /* Align navbar brand to the center */
+  .logo {
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 90%; /* Full width on small screens */
+  }
+}
